@@ -1,12 +1,12 @@
-<template>
-    <div>
-        <template v-if="persona">
-            <h1 v-text="datosPersona.nombre"></h1>
-            <h3 v-text="datosPersona.correo"></h3>
-            <img :src="datosPersona.foto">
-        </template>
-        <span v-else>Cargando persona...</span>
-    </div>
+<template lang="pug">
+
+    div
+        template(v-if='persona')
+            h1(v-text='datosPersona.nombre')
+            h3(v-text='datosPersona.correo')
+            img(:src='datosPersona.foto')
+        span(v-else='') Cargando persona...
+
 </template>
 
 <script>

@@ -9,7 +9,7 @@
                 this.tipo, this.$slots.default
             );
         },
-        
+
     }
 </script>
 

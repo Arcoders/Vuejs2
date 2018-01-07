@@ -12,6 +12,8 @@
 
     <contador></contador>
 
+    <strong>Mi nombre: {{ nombre }} vivo en {{ ciudad }}</strong>
+
   </div>
 
 </template>
@@ -23,10 +25,13 @@
   import tareas from './components/Tareas.vue';
   import contador from './components/Contador.vue';
 
+  import {mapState} from 'vuex';
+
 export default {
 
     components: {persona, elemento, tareas, contador},
 
+    computed: mapState(['nombre', 'ciudad']),
 
 }
 </script>

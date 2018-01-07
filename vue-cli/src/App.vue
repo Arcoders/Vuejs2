@@ -8,6 +8,10 @@
 
     <tareas></tareas>
 
+    <hr>
+
+    <contador></contador>
+
   </div>
 
 </template>
@@ -17,14 +21,12 @@
   import persona from './components/Persona.vue';
   import elemento from './components/Elemento.vue';
   import tareas from './components/Tareas.vue';
+  import contador from './components/Contador.vue';
 
 export default {
 
-    components: {persona, elemento, tareas},
+    components: {persona, elemento, tareas, contador},
 
-    data () {
-      return {}
-    }
 
 }
 </script>

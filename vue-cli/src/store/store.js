@@ -19,6 +19,11 @@ export const store = new Vuex.Store({
 
     getters: {
         tareasCompletadas: state => state.tareas.filter(tarea => tarea.completado).length
+    },
+
+    mutations: {
+        aumentar: state => state.cantidad++,
+        reducir: state => state.cantidad--
     }
 
 });

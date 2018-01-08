@@ -1,6 +1,9 @@
 <template>
 
   <div>
+
+    <count></count>
+
     <tareas_dos></tareas_dos>
     <persona></persona>
     <elemento tipo="em">Elemento section</elemento>
@@ -26,12 +29,13 @@
   import tareas from './components/Tareas.vue';
   import contador from './components/Contador.vue';
   import tareas_dos from './components/Tareas_dos.vue';
+  import count from './components/count.vue';
 
   import {mapState} from 'vuex';
 
 export default {
 
-    components: {persona, elemento, tareas, contador, tareas_dos},
+    components: {persona, elemento, tareas, contador, tareas_dos, count},
 
     computed: mapState(['nombre', 'ciudad']),
 
